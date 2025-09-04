@@ -1,0 +1,16 @@
+//5 - Verificar se um ano é bissexto.
+
+const input = require("prompt-sync")();
+
+let anoDigitado = parseInt(input("Digite um ano: "));
+verificaBissexto(anoDigitado);
+
+function verificaBissexto(numero){
+    if(numero % 4 == 0){
+        console.log("É um ano bissexto");
+    }
+
+    else{
+        console.log("Não é um ano bissexto");
+    }
+}

@@ -1,0 +1,18 @@
+//6 - Converter uma temperatura em Celsius para Fahrenheit.
+
+const input = require("prompt-sync")();
+
+let temperaturaCelsius = parseFloat(input("Digite uma quantidade de temperatura em graus Celsius: "));
+
+let temperaturaFahrenheit = CelsiusParaFahrenheit(temperaturaCelsius);
+
+console.log(temperaturaFahrenheit);
+
+function CelsiusParaFahrenheit(temperaturaCelsius){
+
+    let conversao = 1.8 * temperaturaCelsius + 32;
+
+    let temperaturaFahrenheit = parseFloat(conversao);
+
+    return temperaturaFahrenheit;
+}

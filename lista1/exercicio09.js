@@ -1,0 +1,10 @@
+//9 - Exiba no console a tabuada do número 5, do 1 ao 10.
+
+const multiplicando = 5;
+let resultado;
+
+for(let multiplicador = 1; multiplicador <= 10; multiplicador++){
+    resultado = multiplicando * multiplicador;
+
+    console.log(`${multiplicando} * ${multiplicador} = ${resultado}`);
+}

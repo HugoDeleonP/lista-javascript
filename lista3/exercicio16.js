@@ -15,6 +15,10 @@ function Produto(nome, preco){
     this.preco = preco;
 }
 
-function descrever(){
-    
+function descrever(produto){
+    return `${nome} custa R$${preco}`;
 }
+
+let livro = new Produto("A república - Platão", 65.99);
+
+console.log(descrever(livro));
